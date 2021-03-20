@@ -23,7 +23,7 @@
         <div class="form-group">
             <h:outputLabel for="login" styleClass="control-label col-sm-4">Login:</h:outputLabel>
             <div class="col-sm-4">
-                <h:inputText id="login" value="#{userService.login}" styleClass="form-control" validatorMessage="login is required">
+                <h:inputText id="login" value="#{userBean.user.username}" styleClass="form-control" validatorMessage="login is required">
                     <f:validateRequired />
                 </h:inputText>
             </div>
@@ -31,7 +31,7 @@
         <div class="form-group">
             <h:outputLabel for="pwd" styleClass="control-label col-sm-4">Password:</h:outputLabel>
             <div class="col-sm-4">
-                <h:inputSecret id="pwd" value="#{userService.pwd}" styleClass="form-control" validatorMessage="password is required">
+                <h:inputSecret id="pwd" value="#{userBean.user.password}" styleClass="form-control" validatorMessage="password is required">
                     <f:validateRequired/>
                 </h:inputSecret>
             </div>
@@ -40,10 +40,11 @@
         <div class="form-group" >
             <div class="col-sm-4">
                 <div class="col-sm-1">
-                    <h:commandButton value="Connexion" action="#{userService.logon}" styleClass="btn btn-success btnWidth" />
+                    <h:commandButton value="Connexion" action="#{userBean.logon}" styleClass="btn btn-success btnWidth" />
                 </div>
             </div>
         </div>
     </h:form>
+    <h:messages />
 </f:view>
 </html>

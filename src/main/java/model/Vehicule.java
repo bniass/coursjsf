@@ -8,8 +8,6 @@ package model;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 import java.io.Serializable;
 import java.util.List;
 
@@ -19,15 +17,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "vehicule")
-@NamedQueries({
-    @NamedQuery(name = "Vehicule.findAll", query = "SELECT v FROM Vehicule v")
-    , @NamedQuery(name = "Vehicule.findById", query = "SELECT v FROM Vehicule v WHERE v.id = :id")
-    , @NamedQuery(name = "Vehicule.findByMatricule", query = "SELECT v FROM Vehicule v WHERE v.matricule = :matricule")
-    , @NamedQuery(name = "Vehicule.findByMarque", query = "SELECT v FROM Vehicule v WHERE v.marque = :marque")
-    , @NamedQuery(name = "Vehicule.findByModele", query = "SELECT v FROM Vehicule v WHERE v.modele = :modele")
-    , @NamedQuery(name = "Vehicule.findByCouleur", query = "SELECT v FROM Vehicule v WHERE v.couleur = :couleur")
-    , @NamedQuery(name = "Vehicule.findByPrixjour", query = "SELECT v FROM Vehicule v WHERE v.prixjour = :prixjour")})
-public class Véhicule implements Serializable {
+public class Vehicule implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -41,15 +31,9 @@ public class Véhicule implements Serializable {
     @Column(name = "matricule")
     private String matricule;
     @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 50)
-    @Column(name = "marque")
-    private String marque;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 50)
-    @Column(name = "modele")
-    private String modele;
+    @ManyToOne(optional = false)
+    private Model model;
+
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 50)
@@ -62,18 +46,16 @@ public class Véhicule implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idvehicule")
     private List<Location> locationList;
 
-    public Véhicule() {
+    public Vehicule() {
     }
 
-    public Véhicule(Integer id) {
+    public Vehicule(Integer id) {
         this.id = id;
     }
 
-    public Véhicule(Integer id, String matricule, String marque, String modele, String couleur, float prixjour) {
+    public Vehicule(Integer id, String matricule, String couleur, float prixjour) {
         this.id = id;
         this.matricule = matricule;
-        this.marque = marque;
-        this.modele = modele;
         this.couleur = couleur;
         this.prixjour = prixjour;
     }
@@ -94,22 +76,6 @@ public class Véhicule implements Serializable {
         this.matricule = matricule;
     }
 
-    public String getMarque() {
-        return marque;
-    }
-
-    public void setMarque(String marque) {
-        this.marque = marque;
-    }
-
-    public String getModele() {
-        return modele;
-    }
-
-    public void setModele(String modele) {
-        this.modele = modele;
-    }
-
     public String getCouleur() {
         return couleur;
     }
@@ -126,7 +92,6 @@ public class Véhicule implements Serializable {
         this.prixjour = prixjour;
     }
 
-    @XmlTransient
     public List<Location> getLocationList() {
         return locationList;
     }
@@ -145,10 +110,10 @@ public class Véhicule implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Véhicule)) {
+        if (!(object instanceof Vehicule)) {
             return false;
         }
-        Véhicule other = (Véhicule) object;
+        Vehicule other = (Vehicule) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -159,5 +124,12 @@ public class Véhicule implements Serializable {
     public String toString() {
         return "model.Vehicule[ id=" + id + " ]";
     }
-    
+
+    public Model getModel() {
+        return model;
+    }
+
+    public void setModel(Model model) {
+        this.model = model;
+    }
 }

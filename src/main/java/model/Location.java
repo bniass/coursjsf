@@ -5,12 +5,11 @@
  */
 package model;
 
-import java.io.Serializable;
-import java.util.Date;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @Entity
 @Table(name = "location")
-@XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Location.findAll", query = "SELECT l FROM Location l")
     , @NamedQuery(name = "Location.findByIdlocation", query = "SELECT l FROM Location l WHERE l.idlocation = :idlocation")
@@ -54,7 +52,7 @@ public class Location implements Serializable {
     private float montantlocation;
     @JoinColumn(name = "idvehicule", referencedColumnName = "id")
     @ManyToOne(optional = false,fetch = FetchType.EAGER)
-    private Véhicule idvehicule;
+    private Vehicule idvehicule;
     @JoinColumn(name = "idclient", referencedColumnName = "idclient")
     @ManyToOne(optional = false)
     private Client idclient;
@@ -114,11 +112,11 @@ public class Location implements Serializable {
         this.montantlocation = montantlocation;
     }
 
-    public Véhicule getIdvehicule() {
+    public Vehicule getIdvehicule() {
         return idvehicule;
     }
 
-    public void setIdvehicule(Véhicule idvehicule) {
+    public void setIdvehicule(Vehicule idvehicule) {
         this.idvehicule = idvehicule;
     }
 

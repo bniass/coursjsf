@@ -6,7 +6,34 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65fa85c-89d5-44cd-8e5e-e283bdd49c7d" name="Default Changelist" comment="" />
+    <list default="true" id="e65fa85c-89d5-44cd-8e5e-e283bdd49c7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Marque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Marque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AbstractFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AbstractFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/location.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/location.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/tablestyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/coursjsf.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf/WEB-INF/classes/controller/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf/WEB-INF/classes/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf/WEB-INF/classes/css/tablestyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf/WEB-INF/lib/mysql-connector-java-5.1.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/coursjsf/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/coursjsf/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/coursjsf/login.xhtml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +57,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="jsf" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -43,16 +74,27 @@
     </option>
   </component>
   <component name="ProjectId" id="1p44W8ImyBtizi4q358bPMGGreK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../devoirJavaUdb" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="main" />
+    </force-push-targets>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niass028652\IdeaProjects\coursjsf\src\main\java\model" />
       <recent name="C:\Users\niass028652\IdeaProjects\coursjsf\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model" />
+      <recent name="service" />
       <recent name="util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -156,11 +198,25 @@
       <option name="presentableId" value="Default" />
       <updated>1614429058072</updated>
       <workItem from="1614429062502" duration="4504000" />
-      <workItem from="1615637697676" duration="972000" />
+      <workItem from="1615637697676" duration="9078000" />
+      <workItem from="1616067606541" duration="1929000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
