@@ -14,8 +14,8 @@ public class Marque {
     private Integer id;
 
     @NotNull
-    @Column(name = "libelle")
-    private int libelle;
+    @Column(name = "libelle", length = 50)
+    private String libelle;
 
     @OneToMany(mappedBy = "marque")
     private List<Model> models;
@@ -28,11 +28,11 @@ public class Marque {
         this.id = id;
     }
 
-    public int getLibelle() {
+    public String getLibelle() {
         return libelle;
     }
 
-    public void setLibelle(int libelle) {
+    public void setLibelle(String libelle) {
         this.libelle = libelle;
     }
 

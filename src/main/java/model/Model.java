@@ -14,8 +14,8 @@ public class Model {
     private Integer id;
 
     @NotNull
-    @Column(name = "libelle")
-    private int libelle;
+    @Column(name = "libelle", length = 50)
+    private String libelle;
 
     @ManyToOne(optional = false)
     private Marque marque;
@@ -31,11 +31,11 @@ public class Model {
         this.id = id;
     }
 
-    public int getLibelle() {
+    public String getLibelle() {
         return libelle;
     }
 
-    public void setLibelle(int libelle) {
+    public void setLibelle(String libelle) {
         this.libelle = libelle;
     }
 
